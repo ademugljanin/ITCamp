@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+}
+.glavni {
+    display: inline-block;
+    width: 48%;
+    height: 500px;
+    padding-right: 20px;
+}
+.sivi {
+    margin-right: 86%;
+    margin-left: 20px;
+    border-radius: 3em;
+    font-family: 'Poppins';
+    font-size: .8em;
+    padding-top: 5px;
+    background-color: lightskyblue;
+    color: blue;
+    padding-left: 20px;
+    padding-right: 20px;
+    
+}
+.naslov {
+    padding-left: 20px;
+    font-size: 1.8em;
+    padding-right: 20px;
+    font-family: 'Poppins';
+
+}
+.tekst {
+    color: gray;
+    padding-left: 20px;
+    padding-right: 40px;
+    font-size: 1.2em;
+    font-family: 'Poppins';
+    
+}
+a {
+    font-family: 'Poppins';
+    font-size: 1.2em;
+    padding-left: 20px;
+    padding-right: 20px;
+    text-decoration: none;
+}
+.view {
+    padding-left: 64%;
+    word-spacing: 15px;
+    color: lightgray;
+    
+}
+.koment {
+    padding-left: 15px;
+    color: lightgray;
+
+}
+.donji {
+    border-bottom: 2px solid lightgray;
+}
+.krug{
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: lightgray;
+    margin-top: 20px;
+    margin-left: 20px;
+    ;
+}
+.ime {
+    display: inline-block;
+    width: 130px;
+    height: 130px;
+    text-align: center;
+    margin: 0px;
+}

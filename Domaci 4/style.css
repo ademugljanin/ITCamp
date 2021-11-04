@@ -1,0 +1,113 @@
+.projekat {
+    display: block;
+    margin-left: 25%;
+    margin-top: 10%;
+}
+
+.main {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin: 20px;
+    width: 880px;
+    height: 120px;
+    background-color: rgb(255, 255, 255);
+    border-bottom: rgb(219, 219, 219) solid 2px; 
+    padding: 20px;
+    position: relative;
+
+}
+.main2 {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin: 20px;
+    width: 880px;
+    height: 120px;
+    background-color: rgb(255, 255, 255);
+    border-bottom: rgb(219, 219, 219) solid 2px; 
+    padding: 20px;
+    position: relative;
+
+}
+.main3 {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin: 20px;
+    width: 880px;
+    height: 120px;
+    background-color: rgb(255, 255, 255); 
+    padding: 20px;
+    position: relative;
+
+}
+.slika {
+    background-color: #e0e7ff;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    position:absolute;
+}
+.tekst {
+    display: inline-block;
+    position: absolute;
+    left: 15%;
+    bottom: 40px;
+
+}
+a {
+    text-decoration: none;
+}
+
+.rate {
+    font-size: 3em;
+    color: #6366f1;
+    position:absolute;
+    left: 20px;
+    top: 25px;
+}
+.tekst2 {
+    display: inline-block;
+    position:absolute;
+    left: 20px;
+    bottom: 40px;
+
+}
+.slika2 {
+    background-color: #e0e7ff;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    display: inline-block;
+    position: absolute;
+    right: 20px;
+
+}
+
+.sissors {
+    font-size: 3.2em;
+    color: #6366f1;
+    position: absolute;
+    right: 28px;
+    top: 25px;
+}
+
+.user {
+    font-size: 3.2em;
+    color: #6366f1;
+    position:absolute;
+    left: 25px;
+    top: 22px;
+}
+.button {
+    display: block;
+    position: absolute;
+    left:45%;
+    top: 200px;
+}
+button {
+    width: 120px;
+    height: 40px;
+    font-size: 1.3em;
+    background-color:#6366f1;
+    border: none;
+    border-radius: .2em;
+    font-weight: lighter;
+    cursor: pointer;
+    color: white;
+}

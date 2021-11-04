@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+div {
+    font-family: 'Poppins';
+    width: 400px;
+    height: 500px;
+    padding-top: 30px;
+    padding: auto;
+    margin-top: 200px;
+    margin: auto;
+    background-color:#18223D;
+    border-radius: 1em;
+    border: 3px solid #343F5F;
+}
+.Siva {
+    text-align: left;
+    color: #C1C3F4;
+    margin-left: 40px;
+}
+h1{
+    font-weight: bold;
+    color: white;
+    text-align: left;
+    font-size: 1.5em;
+    margin-left: 40px;
+    margin-right: 41px;
+    line-height: 1.3;
+}
+.icon {
+    font-size: 50px;
+    color: #0504FF;
+    margin-left: 40px;
+}
+img {
+    width: 380px;
+    margin-left: 10px;
+    height: 215px;
+    border-radius: 1.5em;
+    
+}
+.bookmark {
+    color: #92A5FF;
+    font-size: 20px;
+    margin-left: 130px;
+    
+}
+.comment {
+    color: #92A5FF;
+    font-size: 20px;
+    margin-left: 110px;
+}
+.upvote {
+    margin-top: 10px;
+    color: #92A5FF;
+    font-size: 20px;
+    margin-left: 40px;
+}

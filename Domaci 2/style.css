@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap');
+
+.glavni {
+    border: rgb(216, 216, 216) solid 2px;
+    width: 400px;
+    height: 500px;
+}
+.slika {
+    background-color: rgb(236, 236, 236);
+    width: 100%;
+    height: 45%;
+}
+.broj {
+    color: lightgray;
+    margin: auto;
+    text-align: center;
+    padding-top: 17%;
+    font-family: 'Poppins';
+    font-weight: 100;
+    font-size: 3em;
+}
+.sivi {
+    font-family: 'Poppins';
+    font-size: .8em;
+    padding-top: 5px;
+    color: rgb(150, 150, 150);
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.naslov {
+    padding-left: 20px;
+    font-size: 1.5em;
+    padding-right: 20px;
+    font-family: 'Poppins';
+
+}
+.tekst {
+    color: gray;
+    padding-left: 20px;
+    padding-right: 40px;
+    font-size: 1.2em;
+    font-family: 'Poppins';
+    
+}
+a {
+    font-family: 'Poppins';
+    font-size: 1.2em;
+    padding-left: 20px;
+    padding-right: 20px;
+    text-decoration: none;
+}
+.view {
+    padding-left: 50px;
+    word-spacing: 15px;
+    color: lightgray;
+    
+}
+.koment {
+    padding-left: 15px;
+    color: lightgray;
+
+}
