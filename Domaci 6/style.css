@@ -1,0 +1,189 @@
+body{
+    background-color: #17191f;
+    padding-top: 60px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.prva{
+    height: 450px;
+    width: 350px;
+    border:1px solid gray;
+    border-radius: 10px;
+    display: inline-block;
+    position: relative;
+    left: 200px;
+    margin-left: 15px;
+    background-color: #1c1f26;
+    transition: 0.2s;
+}
+.prva:hover{
+    border: 1px solid lightgray;
+}
+.prva h3{
+    font-size: 1.3em;
+    padding: 40px 15px 0 25px;
+    color: lightgray;
+}
+.prva p{
+    color: lightgray;
+    padding-left: 25px;
+    font-size: 0.8em;
+}
+.vote1{
+    font-size: 1.4em;
+    position: absolute;
+    color: lightgray;
+    left: 50px;
+    bottom: 30px;
+    display: inline-block;
+    transition: 0.2s;
+}
+.vote1:hover{
+    color: blue;
+    background-color: lightblue;
+    padding: 3px;
+    border-radius: 10px;
+    left: 50px;
+    bottom: 30px;
+}
+.com1{
+    color: lightgray;
+    font-size: 1.2em;
+    position: absolute;
+    left: 160px;
+    bottom: 30px;
+    transition: 0.2s;
+}
+.com1:hover{
+    color: green;
+    background-color: lightgreen;
+    padding: 3px;
+    border-radius: 10px;
+    left: 160px;
+    bottom: 31px;
+}
+.mark1{
+    color: lightgray;
+    position: absolute;
+    left: 270px;
+    bottom: 30px;
+    font-size: 1.3em;
+    transition: 0.2s;
+}
+.mark1:hover{
+    color: orange;
+    background-color: rgb(168, 45, 0);
+    padding: 3px;
+    border-radius: 10px;
+    left: 270px;
+    bottom: 30px;
+}
+.prva:hover #zastava{
+    visibility: visible;
+}
+.druga{
+    height: 450px;
+    width: 350px;
+    border:1px solid gray;
+    border-radius: 10px;
+    display: inline-block;
+    position: absolute;
+    left: 600px;
+    background-color: #1c1f26;
+    transition: 0.2s;
+}
+.druga:hover{
+    border: 1px solid lightgray;
+}
+.druga h3{
+    font-size: 1.3em;
+    padding: 40px 15px 0 25px;
+    color: lightgray;
+    margin-bottom: 9px;
+}
+.druga p{
+    color: lightgray;
+    padding-left: 25px;
+    padding-top: 10px;
+    font-size: 0.8em;
+    margin-top: 0;
+    margin-bottom: 5px;
+}
+.treca{
+    height: 450px;
+    width: 350px;
+    border:1px solid gray;
+    border-radius: 10px;
+    display: inline-block;
+    position: absolute;
+    left: 980px;
+    background-color: #1c1f26;
+    transition: 0.2s;
+}
+.treca:hover{
+    border: 1px solid lightgray;
+}
+#zastava{
+    width: 20px;
+    height: 20px;
+    font-size: 1.2em;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    color: lightgray;
+    visibility: hidden;
+    transition: 0.05s;
+}
+.treca:hover #zastava{
+    visibility: visible;
+}
+.druga:hover #zastava{
+    visibility: visible;
+}
+.treca h3{
+    font-size: 1.3em;
+    padding: 40px 15px 0 25px;
+    color: lightgray;
+    margin-bottom: 9px;
+    
+}
+.treca p{
+    color: lightgray;
+    padding-left: 25px;
+    padding-top: 10px;
+    font-size: 0.8em;
+    margin-top: 0;
+    margin-bottom: 5px;
+}
+.cetvrta {
+    height: 450px;
+    width: 350px;
+    border:1px solid gray;
+    border-radius: 10px;
+    display: inline-block;
+    position: absolute;
+    left: 1360px;
+    background-color: #1c1f26;    
+    transition: 0.2s;
+}
+.cetvrta:hover{
+    border: 1px solid lightgray;
+}
+
+.cetvrta:hover #zastava{
+    visibility: visible;
+}
+.cetvrta p{
+    color: lightgray;
+    padding-left: 25px;
+    padding-top: 10px;
+    font-size: 0.8em;
+    margin-top: 0;
+    margin-bottom: 5px;
+}
+.cetvrta h3{
+    font-size: 1.3em;
+    padding: 40px 15px 0 25px;
+    color: lightgray;
+    margin-bottom: 9px;
+    
+}
