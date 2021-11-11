@@ -131,7 +131,13 @@ body{
     top: 20px;
     color: lightgray;
     visibility: hidden;
-    transition: 0.05s;
+    transition: 0.2s;
+    padding: 5px;
+    animation: linear ;
+}
+#zastava:hover {
+    background-color: #495164;
+    border-radius: 2px;
 }
 .treca:hover #zastava{
     visibility: visible;
