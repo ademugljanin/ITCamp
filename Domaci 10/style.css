@@ -1,0 +1,62 @@
+body {
+    min-height: 100vh;
+    display: grid;
+    grid:
+        "header" auto
+        "nav" auto
+        "main" 1fr
+        "footer" auto
+        / 1fr;
+    padding: 0;
+    margin: 0;    
+}
+
+@media (min-width: 40em) {
+  body {
+    grid:
+      "header header" auto
+      "nav main" 1fr
+      "nav footer" auto
+      / 12em 1fr;
+  }
+}
+
+header {
+  border: 1px black solid;
+  grid-area: header;
+  background-color: red;
+  font-size: 2em;
+  text-align: center;
+}
+nav {
+  border: 1px black solid;
+  grid-area: nav;
+  background-color: blueviolet;
+  font-size: 1.5em;
+}
+nav h2 {
+  padding-left: 10px;
+}
+main {
+  border: 1px black solid;
+  grid-area: main;
+  background-color: blue;
+}
+main h2 {
+  font-size: 2em;
+  text-align: center;
+}
+main p {
+  font-size:1.5em;
+  text-align:center;
+  padding-top:50px
+  
+}
+footer {
+  border: 1px black solid;  
+  grid-area: footer;
+  background-color: cadetblue;
+  text-align:center;
+  font-size: 2em;
+}
+
