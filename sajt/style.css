@@ -1,0 +1,464 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+
+body {
+    margin: 0;
+    box-sizing: 0;
+    padding: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.Introduction {
+    width: 100%;
+    height: 600px;
+    background-image: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3) ),  url(slika1.jpeg);
+    
+    background-size: 100%;
+    background-position-y: 50%;
+    background-color: #cccccc;
+    color: white;
+    display: flex;
+    flex-direction: row;
+}
+
+.leftpart {
+    margin-left:440px;
+    margin-top: 160px;
+    width: 260px;
+    height: 370px;
+    border: 15px solid #ffa34d ;
+}
+
+.leftpart h1 {
+    font-size: 6rem;
+    font-family: 'Anton';
+    font-weight: 400;
+    margin-top: 40px;
+    margin-left: -80px;
+    white-space: nowrap;
+    letter-spacing: .1rem;
+    line-height: 6.5rem;
+}
+
+.rightpart {
+    margin-left: 150px;
+    width: 640px;
+    margin-top: 250px;
+    line-height: 30px;
+}
+
+.rightpart p {
+    font-size: 1.1rem;
+    font-weight: 700;
+}
+
+.rightpart button {
+    width: 155px;
+    font-size: .9rem;
+    height: 48px;
+    margin-top: 20px;
+    background-color: transparent;
+    border: 2px solid #ffa34d;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.rightpart button:hover {
+    background-color: #ffa34d;
+}
+.grid {
+    background-color: black;
+    width: 100%;
+    height: 700px;
+}
+.grid-container {
+    display: grid;
+    grid-template-rows: 235px 235px;
+    grid-template-columns: 370px 370px 370px ;
+    grid-template-areas: 
+    'text picture picture1'
+    'text1 picture2 picture1';
+    justify-content: center;
+    align-content: center;
+    padding: 100px 200px 100px 200px;
+    column-gap: 20px;
+    row-gap: 20px;
+}
+.item-1 {
+    grid-area: text;
+    color: white;
+    justify-items: center;
+    
+}
+.item-1 h2 {
+    font-family:'Anton' ;
+    font-size: 30px;
+    letter-spacing: 1.5px;
+    
+}
+.item-1 p {
+    font-size: 1.1em;
+    padding-right: 40px;
+    padding-bottom: 10px;
+}
+.item-1 .line {
+    width: 300px;
+    height: 3px;
+    background-color: white;
+}
+.item-2 {
+    grid-area: text1;
+    color: white;
+    padding-top:100px;
+}
+.item-2 p {
+    font-size: 1em;
+    font-style: italic;
+    border-left: 10px solid #ffa34d;
+    padding-left: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 40px;
+}
+.item-3 {
+    grid-area: picture;
+}
+.item-4 {
+    grid-area: picture2;
+}
+.item-5 {
+    grid-area: picture1;
+    justify-items: left;
+    
+}
+
+.grid2 {
+    background-color: #f3f3f3;
+    width: 100%;
+    height: 750px;
+}
+
+.grid-container2 {
+    display: grid;
+    grid-template-rows: 225px 225px;
+    grid-template-columns: 200px 200px 200px 400px;
+    grid-template-areas: 
+    'part1 part3 part5 part7'
+    'part2 part4 part6 part7';
+    justify-content: center;
+    align-content: center;
+    padding: 170px 300px 0px 300px;
+    column-gap: 20px;
+    row-gap: 20px;  
+}
+
+.brief {
+    grid-area: part1;
+}
+.brief .fal {
+    font-size: 40px;
+    color:#ffa34d ;
+}
+.brief h4 {
+    font-size: 1.3em;
+    padding-top: -20px;
+}
+.brief p {
+    font-size: .9em;
+    padding-top: -20px;
+}
+.prof {
+    grid-area: part3;
+}
+.prof .fal {
+    font-size: 40px;
+    color:#ffa34d ;
+}
+.prof h4 {
+    font-size: 1.3em;
+    padding-top: -20px;
+}
+.prof p {
+    font-size: .9em;
+    padding-top: -20px;
+}
+.student {
+    grid-area: part5;
+}
+.student .fal {
+    font-size: 40px;
+    color:#ffa34d ;
+}
+.student h4 {
+    font-size: 1.3em;
+    padding-top: -20px;
+}
+.student p {
+    font-size: .9em;
+    padding-top: -20px;
+}
+.library {
+    grid-area: part2;
+}
+.library .fal {
+    font-size: 40px;
+    color:#ffa34d ;
+}
+.library h4 {
+    font-size: 1.3em;
+    padding-top: -20px;
+}
+.library p {
+    font-size: .9em;
+    padding-top: -20px;
+}
+.camp {
+    grid-area: part4;
+}
+.camp .fal {
+    font-size: 40px;
+    color:#ffa34d ;
+}
+.camp h4 {
+    font-size: 1.3em;
+    padding-top: -20px;
+}
+.camp p {
+    font-size: .9em;
+    padding-top: -20px;
+}
+.exam {
+    grid-area: part6;
+}
+.exam .fal {
+    font-size: 40px;
+    color:#ffa34d ;
+}
+.exam h4 {
+    font-size: 1.3em;
+    padding-top: -20px;
+}
+.exam p {
+    font-size: .9em;
+    padding-top: -20px;
+}
+.text2 {
+    grid-area: part7;
+    text-align: right;
+    padding-left: 60px;
+    padding-bottom: 100px;
+    padding-top: 0;
+}
+
+.text3 {
+    grid-area: part7;
+    padding-top: 280px;
+    padding-left: 60px;
+}
+.text3 p {
+    font-size: .9em;
+    font-style: italic;
+    border-left: 10px solid #ffa34d;
+    text-align: right;
+    padding-top: 20px;
+    padding-left: 30px;
+}
+.text2 .line2 {
+    width: 300px;
+    height: 3px;
+    float: right;
+    background-color: rgb(36, 34, 34);
+}
+.text2 h2 {
+    font-family:'Anton' ;
+    font-size: 35px;
+    letter-spacing: 1.5px;  
+    
+}
+.text2 p {
+    font-size: 1.1em;
+    text-indent: 30px;
+    text-align: right;
+    padding-left: 20px;
+}
+.numbers {
+    width: 100%;
+    height: 400px;
+    background-image:linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(/sajt/slika5.jpg);
+    background-size: 100%;
+    background-position-y: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+.numbers div{
+    width: 200px;
+    height: 200px;
+    margin: 30px;
+    padding-top: 30px;
+    text-align: center;
+}
+
+.numbers h1{
+    font-size: 4.5em;
+    font-family: 'Anton';
+    margin: 0;
+}
+.grid3 {
+    color: white;
+    background-color: black;
+    width: 100%;
+    height: 800px;
+    
+}
+.grid-container3 {
+    display: grid;
+    grid-template-columns: 500px 500px;
+    grid-template-rows: 150px 500px;
+    justify-content: center;
+    align-content: center;
+    padding-top: 50px;
+    column-gap: 50px;
+    row-gap: 60px;  
+    grid-template-areas: 
+    'tekst tekst'
+    'customer1 customer2';
+}
+.cust-text{
+    grid-area: tekst;
+    border-right: 10px solid #ffa34d;
+    margin: 0;
+    padding:0 ;
+}
+.cust-text p{
+    padding-right:500px ;
+    font-size: 1.1em;    
+}
+.cust-text h2{
+    font-family: 'Anton';
+    font-size: 2.3em;
+    margin: 0;
+}
+.cust1{
+    grid-area: customer1;
+    display: flex;
+    flex-direction: column;
+}
+.cust-img{
+    width: 160px;
+    height: 160px;
+    background-image: url(/sajt/slika6.jpg);
+    background-size: 100%;
+    border-radius: 50%;
+}
+.cust1 p{
+    font-size: 1.1em;
+    padding-right:70px ;
+}
+.cust2 p{
+    font-size: 1.1em;
+    padding-right:70px ;
+}
+.cust2{
+    grid-area: customer2;
+    display: flex;
+    flex-direction: column;
+}
+.cust-img2{
+    width: 160px;
+    height: 160px;
+    background-image: url(/sajt/slika7.jpg);
+    background-size: 100%;
+    border-radius: 50%;
+}
+.googlemaps{
+    color: white;
+    width: 100%;
+    height: 700px;
+    background-image:linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(/sajt/slika8.jpeg);
+    background-size: 100%;
+    background-position-y: 50%;    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.tekstic{
+    width: 500px;
+}
+.tekstic h2{
+    font-size: 2.3em;
+    font-family: 'Anton';
+}
+.textic p{
+    padding-right: 30px;
+    font-size: 1.1em;
+}
+.mapa {
+    width: 570px;
+    height: 400px;
+}
+.footer {
+    width: 100%;
+    height: 450px;
+    
+}
+.grid-container4 {
+    display: grid;
+    grid-template-columns: 500px 700px;
+    grid-template-rows: 150px 150px;
+    justify-content: center;
+    align-content: center;
+    padding-top: 50px;
+    column-gap: 50px;
+    row-gap: 60px;  
+    grid-template-areas: 
+    'follow icons'
+    'instruction1 instruction2';
+}
+.follow {
+    grid-area: follow;
+    font-size: 1.5em;
+    font-family: 'Anton';
+    width:280px;
+    height: 150px;
+    border: 16px solid#ffa34d;
+    display: flex;
+    align-items: flex-end;
+    justify-items: flex-end;
+}
+.follow h1 {
+    padding-left: 20px;
+}
+.part2 {
+    grid-area: instruction1;
+    padding-left: 20px;
+    font-size: 18px;
+    font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: bold;
+}
+.line3 {
+    grid-area: icons;
+    width: 250px;
+    height: 3px;
+    background-color: rgb(36, 34, 34);
+    margin-top: 160px;
+
+}
+.part3 {
+    grid-area: icons;
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 100px;
+    font-size: 1.7em;
+}
+.fab{
+    padding-right: 10px;
+    cursor: pointer;
+}
+.part4 {
+    grid-area: instruction2;
+    font-size: 17px;
+    font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: bold;
+}

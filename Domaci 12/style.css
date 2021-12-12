@@ -1,0 +1,109 @@
+body{ 
+    padding: 0;
+    margin: 0;
+}
+.main{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    background-color: #f3f3f3;
+}
+
+.slika {
+    height: 100vh;
+    width: 60%;
+}
+.slika img {
+    width: 100%;
+    height: 100vh;
+}
+.registration{
+    padding-left: 40px;
+    color: black;
+}
+.twit {
+    font-size: 5em;
+    color: rgb(0, 195, 255);
+    padding-top: 40px;
+}
+.registration h1{
+    font-size: 6em;
+    margin-bottom: -40px;
+}
+.registration h3 {
+    font-size: 3em;
+}
+#prvi{
+    font-size: 1.5em;
+    width: 450px;
+    height: 50px;
+    border-radius: 30px;
+    padding-left: 20px;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+#drugi{
+    font-size: 1.5em;
+    width: 450px;
+    height: 50px;
+    border-radius: 30px;
+    padding-left: 20px;
+    cursor: pointer;
+
+}
+.google {
+    color: red;
+    float: left;
+}
+.apple {
+    font-size: 1.3em;
+    float: left;
+}
+.linija {
+    display:flex;
+}
+.line{
+    width: 210px;
+    height: 1px;
+    background-color: gray;
+    margin-top: 28px;
+}
+.linija p{
+    padding:3px ;
+}
+#treci{
+    font-size: 1.5em;
+    width: 450px;
+    height: 50px;
+    border-radius: 30px;
+    padding-left: 20px;
+    background-color:rgb(0, 195, 255) ;
+    color: white;
+    border-color: rgb(0, 195, 255);
+    cursor: pointer;
+}
+.uslovi{
+    font-size: .9em;
+    width: 450px;
+    text-align: center;
+}
+a {
+    color: rgb(0, 195, 255);
+}
+.prijava {
+    padding-top: 40px;
+}
+#prijava {
+    font-size: 2em;
+    text-align: justify;
+}
+#cetvrti {
+    font-size: 1.5em;
+    width: 450px;
+    height: 50px;
+    border-radius: 30px;
+    padding-left: 20px;
+    cursor: pointer;
+    color: rgb(0, 195, 255);
+    border: solid 2px lightgray;
+}
