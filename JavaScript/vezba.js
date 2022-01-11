@@ -117,3 +117,36 @@
 //        alert("Uneli ste pogresan broj probajte opet")
 //     }
 // }
+let rez = 0
+
+while (1) {
+    operacija = Number(prompt("Unesite broj operacije (1.sabiranje, 2.oduzimanje, 3.mnozenje, 4.deljenje): "))
+    if(operacija === 1){
+        let br1 = Number(prompt("Unesite prvi broj"))
+        let br2 = Number(prompt("Unesite drugi broj"))
+        rez = br1 + br2
+        console.log(rez);
+    }
+    if(operacija === 2){
+        let br1 = Number(prompt("Unesite prvi broj"))
+        let br2 = Number(prompt("Unesite drugi broj"))
+        rez = br1 - br2
+        console.log(rez);
+    }
+    if(operacija === 3){
+        let br1 = Number(prompt("Unesite prvi broj"))
+        let br2 = Number(prompt("Unesite drugi broj"))
+        rez = br1 * br2
+        console.log(rez);
+    }
+    if(operacija === 4){
+        let br1 = Number(prompt("Unesite prvi broj"))
+        let br2 = Number(prompt("Unesite drugi broj"))
+        rez = br1 / br2
+        console.log(rez);
+    }
+    if(operacija >= 5 || operacija <= 0){
+        alert("Izlaz iz programa");
+    }
+    break
+}
