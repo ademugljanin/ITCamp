@@ -151,10 +151,30 @@
 //     break
 // }
 
-let stanje = Number(prompt("Unesite broj ucenika:"));
-let niz= []    
-for (i = 0 ;i <  stanje; i++) {
-    niz.push(Number(prompt("Unesite visinu ucenika:")))
-}
-console.log(Math.max(...niz));
-console.log(Math.min(...niz));
+// let stanje = Number(prompt("Unesite broj ucenika:"));
+// let niz= []    
+// for (i = 0 ;i <  stanje; i++) {
+//     niz.push(Number(prompt("Unesite visinu ucenika:")))
+// }
+// console.log(Math.max(...niz));
+// console.log(Math.min(...niz));
+
+// let niz = [];
+// niz.length = 10;
+// let suma = 0;
+// for (let i = 0; i < niz.length; i++) {
+//     niz[i] = i + 1;
+//     if(niz[i] % 2 == 0) {
+//         suma += niz[i]
+//     } 
+// }
+// console.log(suma);
+
+// let niz = [];
+// niz.length = 10;
+// for (let i = 0; i < niz.length; i++) {
+//     niz[i] = i + 1;
+//     niz[i] = niz[i] * 3;
+//     console.log(niz[i]);
+// }
+
