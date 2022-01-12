@@ -117,36 +117,44 @@
 //        alert("Uneli ste pogresan broj probajte opet")
 //     }
 // }
-let rez = 0
+// let rez = 0
 
-while (1) {
-    operacija = Number(prompt("Unesite broj operacije (1.sabiranje, 2.oduzimanje, 3.mnozenje, 4.deljenje): "))
-    if(operacija === 1){
-        let br1 = Number(prompt("Unesite prvi broj"))
-        let br2 = Number(prompt("Unesite drugi broj"))
-        rez = br1 + br2
-        console.log(rez);
-    }
-    if(operacija === 2){
-        let br1 = Number(prompt("Unesite prvi broj"))
-        let br2 = Number(prompt("Unesite drugi broj"))
-        rez = br1 - br2
-        console.log(rez);
-    }
-    if(operacija === 3){
-        let br1 = Number(prompt("Unesite prvi broj"))
-        let br2 = Number(prompt("Unesite drugi broj"))
-        rez = br1 * br2
-        console.log(rez);
-    }
-    if(operacija === 4){
-        let br1 = Number(prompt("Unesite prvi broj"))
-        let br2 = Number(prompt("Unesite drugi broj"))
-        rez = br1 / br2
-        console.log(rez);
-    }
-    if(operacija >= 5 || operacija <= 0){
-        alert("Izlaz iz programa");
-    }
-    break
+// while (1) {
+//     operacija = Number(prompt("Unesite broj operacije (1.sabiranje, 2.oduzimanje, 3.mnozenje, 4.deljenje): "))
+//     if(operacija === 1){
+//         let br1 = Number(prompt("Unesite prvi broj"))
+//         let br2 = Number(prompt("Unesite drugi broj"))
+//         rez = br1 + br2
+//         console.log(rez);
+//     }
+//     if(operacija === 2){
+//         let br1 = Number(prompt("Unesite prvi broj"))    
+//         let br2 = Number(prompt("Unesite drugi broj"))
+//         rez = br1 - br2
+//         console.log(rez);
+//     }
+//     if(operacija === 3){
+//         let br1 = Number(prompt("Unesite prvi broj"))
+//         let br2 = Number(prompt("Unesite drugi broj"))
+//         rez = br1 * br2
+//         console.log(rez);
+//     }
+//     if(operacija === 4){
+//         let br1 = Number(prompt("Unesite prvi broj"))
+//         let br2 = Number(prompt("Unesite drugi broj"))
+//         rez = br1 / br2
+//         console.log(rez);
+//     }
+//     if(operacija >= 5 || operacija <= 0){
+//         alert("Izlaz iz programa");
+//     }
+//     break
+// }
+
+let stanje = Number(prompt("Unesite broj ucenika:"));
+let niz= []    
+for (i = 0 ;i <  stanje; i++) {
+    niz.push(Number(prompt("Unesite visinu ucenika:")))
 }
+console.log(Math.max(...niz));
+console.log(Math.min(...niz));
