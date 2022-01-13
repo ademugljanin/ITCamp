@@ -178,3 +178,37 @@
 //     console.log(niz[i]);
 // }
 
+// let niz1 = ["prvi", "drugi", "treci", "cetvrti", "peti"];
+// let niz2 = [];
+// let nizl = niz1.length;
+
+// console.log(niz1);
+// console.log(niz2);
+
+// for (let i = 0; i < nizl; i++) {
+//     let x = niz1.pop(i);
+//     niz2.unshift(x);
+// }
+// console.log(niz1);
+// console.log(niz2);
+
+// var a = [
+//     [1,2,3],
+//     [4,5,6],
+//     [7,8,9],
+//     [10,11,12]
+// ];
+// len = a.length;
+// for (let i = 0; i < len; i++) {
+//     console.log(`row ${i}`);
+//     for (let j = 0; j < len-1; j++) {
+//         console.log(a[i][j]);        
+//     }
+
+// }
+var a = [
+    [1,2,3],
+    [4,5,6],
+    [7,8,9],
+    [10,11,12]
+];
