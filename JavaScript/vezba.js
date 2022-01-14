@@ -204,11 +204,42 @@
 //     for (let j = 0; j < len-1; j++) {
 //         console.log(a[i][j]);        
 //     }
-
 // }
-var a = [
-    [1,2,3],
-    [4,5,6],
-    [7,8,9],
-    [10,11,12]
-];
+
+// var a = [
+//     [1,2,1,24],
+//     [8,11,9,4],
+//     [7,8,7,27],
+//     [7,4,28,12]
+// ];
+// for (let i = 0; i < a.length; i++) {
+//     const row = a[i];
+//     red = " ";
+//     for (let j = 0; j < row.length; j++) {
+//         if (i==j) {
+//             a[i][j] = 0;
+//         }
+//         red += `${row[j]} \t`;
+    
+//     }
+//     console.log(red);
+// }
+
+// var a = [
+//     [1,2,1,24],
+//     [8,11,9,4],
+//     [7,8,7,27],
+//     [7,4,28,12]
+// ];
+// for (let i = 0; i < a.length; i++) {
+//     const row = a[i];
+//     red = " ";
+//     for (let j = 0; j < row.length; j++) {
+//         if(i+j==row.length-1) {
+//             a[i][j] = 0;
+//         }
+//         red += `${row[j]} \t`;
+    
+//     }
+//     console.log(red);
+// }
