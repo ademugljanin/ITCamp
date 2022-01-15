@@ -216,7 +216,7 @@
 //     const row = a[i];
 //     red = " ";
 //     for (let j = 0; j < row.length; j++) {
-//         if (i==j) {
+//         if (i===j) {
 //             a[i][j] = 0;
 //         }
 //         red += `${row[j]} \t`;
@@ -224,7 +224,8 @@
 //     }
 //     console.log(red);
 // }
-
+// console.log(".");
+// console.log(".");
 // var a = [
 //     [1,2,1,24],
 //     [8,11,9,4],
@@ -235,11 +236,39 @@
 //     const row = a[i];
 //     red = " ";
 //     for (let j = 0; j < row.length; j++) {
-//         if(i+j==row.length-1) {
+//         if(i+j===row.length-1) {
 //             a[i][j] = 0;
 //         }
 //         red += `${row[j]} \t`;
-    
+        
 //     }
-//     console.log(red);
+//         console.log(red);
+// }
+
+// let difference = (niz1,niz2) => {
+//     for (let i = 0; i < niz1.length; i++) {
+//             if(!niz2.includes(niz1[i])){
+//                 niz3.push(niz1[i]);
+//             }
+//     }
+//     for (let i = 0; i < niz2.length; i++) {
+//         if(!niz1.includes(niz2[i])){
+//             niz3.push(niz2[i]);
+//         }
+// }
+//     return niz3;
+// }
+
+// var niz1 = [1,2,3];
+// var niz2 = [100,2,1,10];
+// let niz3 = [];
+// console.log(difference(niz1,niz2).sort());
+
+// var arr1 = [1,2,3];
+// var arr2 = [2,30,1];
+// res = [...new Set([...arr1, ...arr2])];
+// console.log(res);
+// for (let i = 0; i < arr1.length; i++) {
+    
+    
 // }
