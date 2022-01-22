@@ -292,3 +292,21 @@
 // console.log(move([10, 20, 30, 40, 50], 0, 2));
 
 // console.log(move([10, 20, 30, 40, 50], -1, -2));
+
+
+// function capitalizeString(str) {
+//     let fox = prompt("Unesite recenicu");
+//     console.log(fox);
+//     fox = fox.split(" ");
+
+//     for (let i = 0; i < fox.length; i++) {
+//         let rec = fox[i];
+//         rec = rec.split("")
+//         rec[0] = rec[0].toUpperCase();
+//         rec = rec.join(" ")
+//         fox[i] = rec;
+//     }
+//     fox = fox.join(" ")
+//     console.log(fox);
+//     }
+// capitalizeString()
