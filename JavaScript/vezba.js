@@ -331,3 +331,8 @@
 //     }
 // } 
 // console.log(amountTocoins(46, [25, 10, 5, 2,1]));
+
+// function twiceAsOld(dadYearsOld, sonYearsOld) {
+// let twice = dadYearsOld - sonYearsOld * 2;
+// return twice < 0 ? twice * (-1) : twice;
+// }
