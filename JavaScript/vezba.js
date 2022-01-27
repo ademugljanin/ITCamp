@@ -336,3 +336,84 @@
 // let twice = dadYearsOld - sonYearsOld * 2;
 // return twice < 0 ? twice * (-1) : twice;
 // }
+
+// function reverseArray(n) {
+//     var num = n.toString();
+//     var arr = num.split("");
+//     return arr.reverse();
+// }
+// let brojcic = Number(prompt("Unesite broj"))
+// console.log(reverseArray(brojcic));
+
+// function reverseArray(n) {
+//     n = n.toString();
+//     arr = [];
+//     for (i = n.length-1; i >= 0; i--) {
+//         arr.push(parseInt(n[i]));
+//     }
+//     return arr;
+// }
+// let brojcic = Number(prompt("Unesite broj"))
+// console.log(reverseArray(brojcic));
+
+// function duzina(niz) {
+//     min1 = niz[0];
+//     min2 = niz[0];
+    
+//     for (el of niz) {
+//         if (min1>el) {
+//             min1 = el;
+//         }
+//         else if (min2>el && min1 < el) {
+//             min2 = el;
+//         }
+//     }
+//     console.log(min1);
+//     console.log(min2);
+// }
+
+// duzina([3,5,2,1,9,3,4]);
+
+// function find(niz) {
+//     max = niz[0];
+//     min = niz[0]
+//     for(i=0;i<=niz.length;i++){
+//         if (min>niz[i]){
+//             min=niz[i];
+//         }
+//         if (max<niz[i]) {
+//             max=niz[i];
+//         }
+//         if(Math.abs(min)>max){
+//             max=min;
+//         }
+//     }
+
+//     console.log(max);
+
+// }
+// find([3,5,1,2,23,15,231,2,-231,-430,0,-11000,11000]);
+
+// data = [3,0,24,54,0,123,0,32,63]
+// function find(niz) {
+//     for(i=0;i<niz.length;i++){
+//         if(niz[i]===0){
+//             niz.splice(i,1);
+//             niz.push(0)        
+//         }
+//     }
+//     return niz;
+// }
+// console.log(find(data));
+
+// data = [3,24,54,123,32,63]
+// function find(niz) {
+//     suma = 0;
+//     ars = 1
+//     for (let i = 0; i < niz.length; i++) {
+//         suma += niz[i];
+//     }
+//     ars = suma/niz.length;
+//     return ars;
+// }
+// console.log(find(data));
