@@ -418,18 +418,18 @@
 // }
 // console.log(find(data));
 
-data = [3,0,24,54,0,123,1,1,1,0,32,63]
-function find(niz) {
-    for(i=0;i<niz.length;i++){
-        if(niz[i]===0){
-            niz.splice(i,1);
-            niz.push(0)        
-        }
-        if(niz[i]===1){
-            niz.splice(i,1);
-            niz.unshift(1)        
-        }
-    }
-    console.log(niz); 
-}
-find(data);
+// data = [3,0,24,54,0,123,1,1,1,0,32,63]
+// function find(niz) {
+//     for(i=0;i<niz.length;i++){
+//         if(niz[i]===0){
+//             niz.splice(i,1);
+//             niz.push(0)        
+//         }
+//         if(niz[i]===1){
+//             niz.splice(i,1);
+//             niz.unshift(1)        
+//         }
+//     }
+//     console.log(niz); 
+// }
+// find(data);
