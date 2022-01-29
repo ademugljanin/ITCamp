@@ -433,3 +433,32 @@
 //     console.log(niz); 
 // }
 // find(data);
+
+// function sayHello() {
+//     console.log("Hello");
+// }
+// data = [1,2,3,4,5,6];
+// data.forEach(sayHello);
+
+// data = [2,5,34,65,43,52,98,23,66]
+// a = data.some((el) => {
+//     return el > 97;
+    
+// })
+// console.log(a);
+
+// data = [3,-20,24,54,-15,123,1,-44,32,63]
+// function countPositivesSumNegatives(input) {
+//     arr = [0,0];
+//     input.forEach((el) => {
+//         if(el>0){
+//             arr[0]++;
+//         }
+//         else {
+//             arr[1]+=el;
+//         }
+        
+//     })
+//     return arr;
+// }
+// countPositivesSumNegatives(data);
