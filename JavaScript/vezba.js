@@ -9,26 +9,26 @@
 // // //         break;
 // // //     case "":
 // // //         console.log("Broj je high");
-// // //         break;   
-    
+// // //         break;
+
 // // //     default:
 // // //         console.log("Uneli ste pogresan broj, probajte opet...")
 // // //     }
 
- // for (let i = 1;i<=50;i++) {
- //     if (i%3===0 && i%5===0){
- //         console.log ("fizzbuzz")
- //     }
- //     else if (i%3===0){
- //         console.log ("fizz");
- //     }
- //     else if (i%5===0){
- //         console.log ("buzz");
- //     }
- //     else {
- //     console.log (i);
- //     }
- // }
+// for (let i = 1;i<=50;i++) {
+//     if (i%3===0 && i%5===0){
+//         console.log ("fizzbuzz")
+//     }
+//     else if (i%3===0){
+//         console.log ("fizz");
+//     }
+//     else if (i%5===0){
+//         console.log ("buzz");
+//     }
+//     else {
+//     console.log (i);
+//     }
+// }
 // fakt = 1;
 // for (let j = 1; j <= i; j++) {
 //     fakt = fakt * j;
@@ -38,7 +38,7 @@
 // function F(n) {
 //       if(n == 0) {
 //             return 0;
-//             } 
+//             }
 //  if(n == 1) {    return 1;
 
 // }  else {    return F(n-1) + F(n-2);
@@ -52,12 +52,12 @@
 //     zvezda=zvezda+("*");
 //       }
 //  console.log(zvezda);
-//  zvezda='';    
+//  zvezda='';
 // }
 
 // for (let i = 1; i <= 10; i++) {
 //   var red = ""
-//     for (let j = 1; j <= 10; j++) { 
+//     for (let j = 1; j <= 10; j++) {
 //       red += `${i * j}\t`;
 //     }
 //     console.log(red, "\n");
@@ -79,8 +79,8 @@
 //       negativne += t;
 //     }
 //     }
-//     console.log(`Srednja pozitivna je ${pozitivne/pozBr}`);   
-//     console.log(`Srednja negativna je ${negativne/negBr}`);   
+//     console.log(`Srednja pozitivna je ${pozitivne/pozBr}`);
+//     console.log(`Srednja negativna je ${negativne/negBr}`);
 
 // var rec = prompt("Unesite palindrom")
 // console.log(rec)
@@ -102,12 +102,10 @@
 // }
 // alert("Tacna lozinka");
 
-
-
 // while(true){
 //     broj = Number(prompt("unesite broj u rasponu od 10 do 20"))
 //     if(broj === 0){
-//     alert("Uneli ste nulu prekida se program")    
+//     alert("Uneli ste nulu prekida se program")
 //     break;
 //     }
 //     if(10 <= broj && broj <=20){
@@ -128,7 +126,7 @@
 //         console.log(rez);
 //     }
 //     if(operacija === 2){
-//         let br1 = Number(prompt("Unesite prvi broj"))    
+//         let br1 = Number(prompt("Unesite prvi broj"))
 //         let br2 = Number(prompt("Unesite drugi broj"))
 //         rez = br1 - br2
 //         console.log(rez);
@@ -152,7 +150,7 @@
 // }
 
 // let stanje = Number(prompt("Unesite broj ucenika:"));
-// let niz= []    
+// let niz= []
 // for (i = 0 ;i <  stanje; i++) {
 //     niz.push(Number(prompt("Unesite visinu ucenika:")))
 // }
@@ -166,7 +164,7 @@
 //     niz[i] = i + 1;
 //     if(niz[i] % 2 == 0) {
 //         suma += niz[i]
-//     } 
+//     }
 // }
 // console.log(suma);
 
@@ -202,7 +200,7 @@
 // for (let i = 0; i < len; i++) {
 //     console.log(`row ${i}`);
 //     for (let j = 0; j < len-1; j++) {
-//         console.log(a[i][j]);        
+//         console.log(a[i][j]);
 //     }
 // }
 
@@ -220,7 +218,7 @@
 //             a[i][j] = 0;
 //         }
 //         red += `${row[j]} \t`;
-    
+
 //     }
 //     console.log(red);
 // }
@@ -240,7 +238,7 @@
 //             a[i][j] = 0;
 //         }
 //         red += `${row[j]} \t`;
-        
+
 //     }
 //         console.log(red);
 // }
@@ -269,8 +267,7 @@
 // res = [...new Set([...arr1, ...arr2])];
 // console.log(res);
 // for (let i = 0; i < arr1.length; i++) {
-    
-    
+
 // }
 // function move(arr, old_index, new_index) {
 //     while (old_index < 0) {
@@ -285,14 +282,13 @@
 //             arr.push(undefined);
 //         }
 //     }
-//      arr.splice(new_index, 0, arr.splice(old_index, 1)[0]);  
+//      arr.splice(new_index, 0, arr.splice(old_index, 1)[0]);
 //    return arr;
 // }
 
 // console.log(move([10, 20, 30, 40, 50], 0, 2));
 
 // console.log(move([10, 20, 30, 40, 50], -1, -2));
-
 
 // function capitalizeString(str) {
 //     let fox = prompt("Unesite recenicu");
@@ -310,26 +306,26 @@
 //     console.log(fox);
 //     }
 // capitalizeString()
-// function amountTocoins(amount, coins) 
+// function amountTocoins(amount, coins)
 // {
-//  if (amount === 0) 
+//  if (amount === 0)
 //   {
 //      return [];
-//    } 
+//    }
 //  else
 //    {
-//      if (amount >= coins[0]) 
+//      if (amount >= coins[0])
 //        {
 //         left = (amount - coins[0]);
 //         return [coins[0]].concat( amountTocoins(left, coins) );
-//         } 
+//         }
 //       else
 //         {
 //          coins.shift();
 //          return amountTocoins(amount, coins);
 //         }
 //     }
-// } 
+// }
 // console.log(amountTocoins(46, [25, 10, 5, 2,1]));
 
 // function twiceAsOld(dadYearsOld, sonYearsOld) {
@@ -359,7 +355,7 @@
 // function duzina(niz) {
 //     min1 = niz[0];
 //     min2 = niz[0];
-    
+
 //     for (el of niz) {
 //         if (min1>el) {
 //             min1 = el;
@@ -399,7 +395,7 @@
 //     for(i=0;i<niz.length;i++){
 //         if(niz[i]===0){
 //             niz.splice(i,1);
-//             niz.push(0)        
+//             niz.push(0)
 //         }
 //     }
 //     return niz;
@@ -423,14 +419,14 @@
 //     for(i=0;i<niz.length;i++){
 //         if(niz[i]===0){
 //             niz.splice(i,1);
-//             niz.push(0)        
+//             niz.push(0)
 //         }
 //         if(niz[i]===1){
 //             niz.splice(i,1);
-//             niz.unshift(1)        
+//             niz.unshift(1)
 //         }
 //     }
-//     console.log(niz); 
+//     console.log(niz);
 // }
 // find(data);
 
@@ -443,7 +439,7 @@
 // data = [2,5,34,65,43,52,98,23,66]
 // a = data.some((el) => {
 //     return el > 97;
-    
+
 // })
 // console.log(a);
 
@@ -457,7 +453,7 @@
 //         else {
 //             arr[1]+=el;
 //         }
-        
+
 //     })
 //     return arr;
 // }
@@ -481,3 +477,64 @@
 // function symmetricPoint(p, q) {
 //   return [2*q[0]-p[0], 2*q[1]-p[1] ]
 // }
+
+// let niz = [1,1,1,5,3,5,1];
+// function stray(niz) {
+//     let niz1 = niz[0];
+//     for(let i=0;i<=niz.length;i++){
+//         if(niz1 !== niz[i]){
+//             return niz1 = niz[i];
+//         }
+//     }
+// }
+// console.log(stray(niz));
+
+// function stray(numbers) {
+//   num = 0;
+
+//   if (numbers[0] !== numbers[1] && numbers[0] !== numbers[2]) {
+//     num = numbers[0];
+//   }
+//   if (
+//     numbers[numbers.length - 1] !== numbers[numbers.length - 2] &&
+//     numbers[numbers.length - 1] !== numbers[numbers.length - 3]
+//   ) {
+//     num = numbers[numbers.length - 1];
+//   }
+
+//   for (let i = 1; i < numbers.length - 1; i++) {
+//     if (numbers[1] !== numbers[i - 1] && numbers[i] !== numbers[i + 1]) {
+//       num = numbers[i];
+//       break;
+//     }
+//   }
+//   return num;
+// }
+
+// let niz = [12,14,63,72,55,24];
+
+// function inverseSlice(items,a,b) {
+//     let niz = [];
+//     for (let i = 0; i < items.length; i++) {
+//         if(i<a || i>=b){
+//             niz.push(items[i]);
+//         }
+
+//     }
+//     return niz;
+// }
+// console.log(inverseSlice(niz,2,4));
+
+let linija = "alpha beta beta gama gama gama delta alpha beta beta gama gama delta";
+function duplicate(linija) {
+    let recPom = ' ';
+    for (let i = 0; i < linija.split(" ").length; i++) {
+        pom1 = linija.split(" ")[i];
+        pom2 = linija.split(" ")[i+1];
+        if(pom1 !== pom2){
+            recPom += pom1 + " ";
+        }
+    }
+    return recPom;
+}
+console.log(duplicate(linija));
