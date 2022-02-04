@@ -525,16 +525,16 @@
 // }
 // console.log(inverseSlice(niz,2,4));
 
-let linija = "alpha beta beta gama gama gama delta alpha beta beta gama gama delta";
-function duplicate(linija) {
-    let recPom = ' ';
-    for (let i = 0; i < linija.split(" ").length; i++) {
-        pom1 = linija.split(" ")[i];
-        pom2 = linija.split(" ")[i+1];
-        if(pom1 !== pom2){
-            recPom += pom1 + " ";
-        }
-    }
-    return recPom;
-}
-console.log(duplicate(linija));
+// let linija = "alpha beta beta gama gama gama delta alpha beta beta gama gama delta";
+// function duplicate(linija) {
+//     let recPom = ' ';
+//     for (let i = 0; i < linija.split(" ").length; i++) {
+//         pom1 = linija.split(" ")[i];
+//         pom2 = linija.split(" ")[i+1];
+//         if(pom1 !== pom2){
+//             recPom += pom1 + " ";
+//         }
+//     }
+//     return recPom;
+// }
+// console.log(duplicate(linija));
