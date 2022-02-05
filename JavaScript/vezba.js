@@ -538,3 +538,79 @@
 //     return recPom;
 // }
 // console.log(duplicate(linija));
+
+// function findLargestSumPair(arr) {
+//   let first, second;
+//   if (arr[0] > arr[1]) {
+//     first = arr[0];
+//     second = arr[1];
+//   } else {
+//     first = arr[1];
+//     second = arr[0];
+//   }
+
+//   for (let i = 2; i < arr.length; i++) {
+//     if (arr[i] > first) {
+//       second = first;
+//       first = arr[i];
+//     } else if (arr[i] > second && arr[i] != first) second = arr[i];
+//   }
+//   return first + second;
+// }
+
+// let arr1 = [12, 34, 10, 6, 40];
+// console.log(findLargestSumPair(arr1));
+
+// function nbYear(p0, percent, aug, p) {
+
+//     var brojac = 0;
+//     while (true)
+//     {
+//       if (p0 >= p)
+//       {
+//         return brojac;
+//       }
+//       p0 = p0 * (1 + percent/100) + aug;
+//       brojac++;
+//     }
+//   }
+//   console.log(nbYear(1000, 2, 50, 1200));
+
+// let pom = [];
+// let niz=[1,8,3,4,7,1,24,126,43,16,84,54];
+// for(let i=0;i<=niz.length;i++){
+//     for(let j=i+1;j<=niz.length;j++){
+//         if(niz[i]<niz[j]){
+//             [niz[i],niz[j]] = [niz[j],niz[i]]
+//         }
+//     }
+// }
+// console.log(niz);
+
+// function openOrSenior(data){
+//     var pom = [];
+//     for(let i=0;i<data.length;i++){
+//       if(data[i][0]>=55 && data[i][1]>7){
+//         pom.push("Senior")
+//       }
+//       else {
+//         pom.push("Open")
+//       }
+//     }
+//     return pom;
+//     }
+// function addBinary( a, b ){
+// var sum = a + b,
+//         binary = '';
+
+// while ( sum > 0 ) {
+//   binary += ( sum % 2 );
+//   sum = Math.floor( sum / 2 );
+// }
+
+// return binary;
+//   }
+
+// addB = (a, b) => (a + b).toString(2);
+
+// console.log(addB(25, 27));
