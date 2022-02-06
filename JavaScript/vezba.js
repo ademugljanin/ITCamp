@@ -611,6 +611,6 @@
 // return binary;
 //   }
 
-// addB = (a, b) => (a + b).toString(2);
+addB = (a, b) => (a + b).toString(2);
 
-// console.log(addB(25, 27));
+console.log(addB(25, 27));
