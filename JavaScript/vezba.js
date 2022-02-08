@@ -576,41 +576,83 @@
 //   }
 //   console.log(nbYear(1000, 2, 50, 1200));
 
-let pom = [];
-let niz=[1,8,3,4,7,1,24,126,43,16,84,54];
-for(let i=0;i<=niz.length;i++){
-    for(let j=i+1;j<=niz.length;j++){
-        if(niz[i]<niz[j]){
-            [niz[i],niz[j]] = [niz[j],niz[i]]
-        }
-    }
-}
-console.log(niz);
+// let pom = [];
+// let niz=[1,8,3,4,7,1,24,126,43,16,84,54];
+// for(let i=0;i<=niz.length;i++){
+//     for(let j=i+1;j<=niz.length;j++){
+//         if(niz[i]<niz[j]){
+//             [niz[i],niz[j]] = [niz[j],niz[i]]
+//         }
+//     }
+// }
+// console.log(niz);
 
-function openOrSenior(data){
-    var pom = [];
-    for(let i=0;i<data.length;i++){
-      if(data[i][0]>=55 && data[i][1]>7){
-        pom.push("Senior")
-      }
-      else {
-        pom.push("Open")
-      }
-    }
-    return pom;
-    }
-function addBinary( a, b ){
-var sum = a + b,
-        binary = '';
+// function openOrSenior(data){
+//     var pom = [];
+//     for(let i=0;i<data.length;i++){
+//       if(data[i][0]>=55 && data[i][1]>7){
+//         pom.push("Senior")
+//       }
+//       else {
+//         pom.push("Open")
+//       }
+//     }
+//     return pom;
+//     }
+// function addBinary( a, b ){
+// var sum = a + b,
+//         binary = '';
 
-while ( sum > 0 ) {
-  binary += ( sum % 2 );
-  sum = Math.floor( sum / 2 );
-}
+// while ( sum > 0 ) {
+//   binary += ( sum % 2 );
+//   sum = Math.floor( sum / 2 );
+// }
 
-return binary;
-  }
+// return binary;
+//   }
 
-addB = (a, b) => (a + b).toString(2);
+// addB = (a, b) => (a + b).toString(2);
 
-console.log(addB(25, 27));
+// console.log(addB(25, 27));
+
+// function _keys(obj)
+//  {
+//     if (!isObject(obj)) return [];
+//     if (Object.keys) return Object.keys(obj);
+//     var keys = [];
+//     for (var key in obj) if (_.has(obj, key)) keys.push(key);
+//     return keys;
+//   }
+// function isObject(obj)
+// {
+//     var type = typeof obj;
+//     return type === 'function' || type === 'object' && !!obj;
+//   }
+// console.log(_keys({red: "#FF0000", green: "#00FF00", white: "#FFFFFF"}));
+
+// var library = [
+//   {
+//     title: "Bill Gates",
+//     author: "The Road Ahead",
+//     readingStatus: true,
+//   },
+//   {
+//     title: "Steve Jobs",
+//     author: "Walter Isaacson",
+//     readingStatus: true,
+//   },
+//   {
+//     title: "Mockingjay: The Final Book of The Hunger Games",
+//     author: "Suzanne Collins",
+//     readingStatus: false,
+//   },
+// ];
+
+// for (var i = 0; i < library.length; i++) {
+//   var book = "'" + library[i].title + "'" + " by " + library[i].author + ".";
+//   if (library[i].readingStatus) {
+//     console.log("Already read " + book);
+//   } else {
+//     console.log("You still need to read " + book);
+//   }
+// }
