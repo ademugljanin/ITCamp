@@ -630,33 +630,56 @@
 //   }
 // console.log(_keys({red: "#FF0000", green: "#00FF00", white: "#FFFFFF"}));
 
+// var library = [
+//   {
+//     title: "Bill Gates",
+//     author: "The Road Ahead",
+//     readingStatus: true,
+//   },
+//   {
+//     title: "Steve Jobs",
+//     author: "Walter Isaacson",
+//     readingStatus: true,
+//   },
+//   {
+//     title: "Mockingjay: The Final Book of The Hunger Games",
+//     author: "Suzanne Collins",
+//     readingStatus: false,
+//   },
+// ];
+
+// for (var i = 0; i < library.length; i++) {
+//   var book = "'" + library[i].title + "'" + " by " + library[i].author + ".";
+//   if (library[i].readingStatus) {
+//     console.log("Already read " + book);
+//   } else {
+//     console.log("You still need to read " + book);
+//   }
+// }
+
+// class Osoba{
+//   constructor(ime) {
+//       this.ime = ime;
+//   }
+//   objavi() {
+//       console.log("Ovo je " + this.ime);
+//   }
+// }
+
+// o1 = {
+//   name: "Dzemil",
+//   surname: "Dupljak",
+// };
+// o2 = {};
 
 
-var library = [
-  {
-    title: "Bill Gates",
-    author: "The Road Ahead",
-    readingStatus: true,
-  },
-  {
-    title: "Steve Jobs",
-    author: "Walter Isaacson",
-    readingStatus: true,
-  },
-  {
-    title: "Mockingjay: The Final Book of The Hunger Games",
-    author: "Suzanne Collins",
-    readingStatus: false,
-  },
-];
+// let flatObj = Object.entries(o1).length;
 
+// for(let i = 0 ; i < flatObj.length ; i++){
+//   console.log(flatObj[i]);
+//   o2(flatObj[i][1]) = flatObj[i][0];
+// }
+// console.log(o1);
+// console.log("=========================================");
+// console.log(o2);
 
-
-for (var i = 0; i < library.length; i++) {
-  var book = "'" + library[i].title + "'" + " by " + library[i].author + ".";
-  if (library[i].readingStatus) {
-    console.log("Already read " + book);
-  } else {
-    console.log("You still need to read " + book);
-  }
-}
