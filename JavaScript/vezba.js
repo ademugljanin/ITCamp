@@ -672,7 +672,6 @@
 // };
 // o2 = {};
 
-
 // let flatObj = Object.entries(o1).length;
 
 // for(let i = 0 ; i < flatObj.length ; i++){
@@ -683,3 +682,75 @@
 // console.log("=========================================");
 // console.log(o2);
 
+class Book {
+  constructor(title, genre, author) {
+    this.title = title;
+    this.genre = genre;
+    this.author = author;
+    this.read = false;
+    this.read_date = null;
+  }
+}
+
+class BookLists {
+  constructor() {
+    this.bookShelf = [];
+    this.booksRead = 0;
+    this.notBooksRead = this.bookShelf - this.booksRead;
+    this.nextBook = null;
+    this.currBook = null;
+    this.lastBook = null;
+  }
+
+  add(book) {
+    if (book instanceof Book) {
+      //TODO add validation of other properties
+      this.bookShelf.push(book);
+      if (!this.currBook) {
+        for (let i = 0; i < this.bookShelf.length; i++) {
+          if (!this.bookShelf[i].read) {
+            this.currBook = this.booksRead[i];
+            if (!this.booksRead[i + 1]) {
+              this.nextBook = this.bookShelf[i + 2];
+            } else {
+              this.nextBook = null;
+            }
+            break;
+          }
+        }
+      }
+    } 
+    else {
+      console.log("Invalid argument type");
+    }
+  }
+  finishCurrentBook(book) {
+    for (let i = 0; i < this.bookShelf.length; i++) {
+      const book = this.bookShelf[i];
+      if (book.title === this.currBook.title) {
+        this.bookShelf[i].read = true;
+        this.bookShelf[i].read.date = new Date().now();
+        this.lastBook = this.currBook;
+        this.currBook = this.nextBook;
+        if (this.bookShelf[i + 1]) this.nextBook = this.bookShelf[i + 1];
+        break;
+      }
+    }
+  }
+}
+b1 = new Book("HP1", "magic", "JKR");
+b2 = new Book("HP2", "magic", "JKR");
+b3 = new Book("HP3", "magic", "JKR");
+b4 = new Book("HP4", "magic", "JKR");
+b5 = new Book("HP5", "magic", "JKR");
+
+bl = new BookLists();
+
+bl.add(b1);
+bl.add(b2);
+bl.add(b3);
+bl.add(b4);
+bl.add(b5);
+
+console.log(bl.currBook);
+console.log(bl.nextBook);
