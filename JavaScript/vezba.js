@@ -706,21 +706,19 @@ class BookLists {
     if (book instanceof Book) {
       //TODO add validation of other properties
       this.bookShelf.push(book);
-      if (!this.currBook) {
-        for (let i = 0; i < this.bookShelf.length; i++) {
-          if (!this.bookShelf[i].read) {
-            this.currBook = this.booksRead[i];
-            if (!this.booksRead[i + 1]) {
-              this.nextBook = this.bookShelf[i + 2];
-            } else {
-              this.nextBook = null;
-            }
-            break;
+
+      for (let i = 0; i < this.bookShelf.length; i++) {
+        if (!this.bookShelf[i].read) {
+          this.currBook = this.bookShelf[i];
+          if (this.bookShelf[i + 1]) {
+            this.nextBook = this.bookShelf[i + 1];
+          } else {
+            this.nextBook = null;
           }
+          break;
         }
       }
-    } 
-    else {
+    } else {
       console.log("Invalid argument type");
     }
   }
@@ -754,3 +752,13 @@ bl.add(b5);
 
 console.log(bl.currBook);
 console.log(bl.nextBook);
+console.log(bl.lastBook);
+
+
+console.log(finishCurrentBook(bl));
+console.log(finishCurrentBook(bl));
+
+
+console.log(bl.currBook);
+console.log(bl.nextBook);
+console.log(bl.lastBook);
