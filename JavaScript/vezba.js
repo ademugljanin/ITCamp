@@ -764,37 +764,38 @@
 // console.log(bl.lastBook);
 
 
-var cat = {
-  tired : 0,
-  hunger : 0,
-  lonely : 0,
-  happy : 0,
-  sleep : function(n){
-    this.tired-=5*n;
-    this.hunger+=5*n;
-  },
-  feed : function(n){
-    this.happy+=5*n;
-    this.hunger-=5*n;
-  },
-  pet : function(n){
-    this.lonely -=5*n;
-    this.happy +=5*n;
-    this.tired +=5*n;
-  },
-  pat : function(n){
-    if(this.hunger> 40 || this.tired>60){
-      console.log("NE DIRA ME!");
-    }
-    else {
-      console.log("TU ISPOD STOMAKA MAMI, TO ME RADI!");
-    }
-  }
+// var cat = {
+//   tired : 0,
+//   hunger : 0,
+//   lonely : 0,
+//   happy : 0,
+//   sleep : function(n){
+//     this.tired-=5*n;
+//     this.hunger+=5*n;
+//   },
+//   feed : function(n){
+//     this.happy+=5*n;
+//     this.hunger-=5*n;
+//   },
+//   pet : function(n){
+//     this.lonely -=5*n;
+//     this.happy +=5*n;
+//     this.tired +=5*n;
+//   },
+//   pat : function(n){
+//     if(this.hunger> 40 || this.tired>60){
+//       console.log("NE DIRA ME!");
+//     }
+//     else {
+//       console.log("TU ISPOD STOMAKA MAMI, TO ME RADI!");
+//     }
+//   }
   
-}
-cat.tired = 30;
-cat.sleep(3);
-cat.feed(4);
-cat.pet(5);
-console.log(cat.tired, cat.hunger, cat.lonely, cat.happy);
-cat.pat();
+// }
+// cat.tired = 30;
+// cat.sleep(3);
+// cat.feed(4);
+// cat.pet(5);
+// const {tired,hunger,lonely,happy} = cat;
+// console.log("Umor:",tired,"\nGlad",hunger,"\nUsamljenost",lonely,"\nSreca",happy);
+// cat.pat();
