@@ -799,3 +799,5 @@
 // const {tired,hunger,lonely,happy} = cat;
 // console.log("Umor:",tired,"\nGlad",hunger,"\nUsamljenost",lonely,"\nSreca",happy);
 // cat.pat();
+
+
