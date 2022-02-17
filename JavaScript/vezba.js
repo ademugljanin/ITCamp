@@ -801,3 +801,58 @@
 // cat.pat();
 
 
+// data = {
+//     a: 1,
+//     b: 2
+// }
+// function without(data, prop){
+//     delete data[prop];
+//     return data;
+// }
+// console.log(without(data,'b'));
+
+// var library = [ 
+//     {
+//         title: 'Bill Gates',
+//         author: 'The Road Ahead',
+//         readingStatus: true,
+//         age: 29
+//     },
+//     {
+//         title: 'Steve Jobs',
+//         author: 'Walter Isaacson',
+//         readingStatus: true,
+//         age: 14
+//     },
+//     {
+//         title: 'Mockingjay: The Final Book of The Hunger Games',
+//         author: 'Suzanne Collins',
+//         readingStatus: false,
+//         age: 25
+//     },
+//     {
+//         title: 'Bill Gates',
+//         author: 'The Road Ahead',
+//         readingStatus: true,
+//         age: 19
+//     },
+//     {
+//         title: 'Steve Jobs',
+//         author: 'Walter Isaacson',
+//         readingStatus: true,
+//         age: 12
+//     },];
+
+// function without(niz){
+//     let niz1 = [];
+//     for (var i = 0; i < niz.length; i++) 
+//        {
+//            if(niz[i].age > 18){
+//                niz1.push(niz[i]);
+//            }
+//         }
+//     return niz1;
+// }
+
+// console.log(without(library));  
+
