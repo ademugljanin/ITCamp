@@ -225,35 +225,35 @@
 
 /*******************CODING CHALLENGE*********************/
 
-// const john = {
-//   name: "John",
-//   surname: "Bauman",
-//   weight: "78",
-//   height: "1.69",
-//   calcBMI: function () {
-//     return this.weight / this.height ** 2;
-//   },
-// };
-// const mark = {
-//   name: "Mark",
-//   surname: "Hauman",
-//   weight: "92",
-//   height: "1.95",
-//   calcBMI: function () {
-//     return this.weight / this.height ** 2;
-//   },
-// };
+const john = {
+  name: "John",
+  surname: "Bauman",
+  weight: "78",
+  height: "1.69",
+  calcBMI: function () {
+    return this.weight / this.height ** 2;
+  },
+};
+const mark = {
+  name: "Mark",
+  surname: "Hauman",
+  weight: "92",
+  height: "1.95",
+  calcBMI: function () {
+    return this.weight / this.height ** 2;
+  },
+};
 
-// if (john.calcBMI() > mark.calcBMI()) {
-//   console.log(
-//     `${john.name}'s BMI (${john.calcBMI()}) is higher than ${
-//       mark.name
-//     }'s (${mark.calcBMI()})!`
-//   );
-// } else {
-//   console.log(
-//     `${mark.name}'s BMI (${mark.calcBMI()}) is higher than ${
-//       john.name
-//     }'s (${john.calcBMI()})!`
-//   );
-// }
+if (john.calcBMI() > mark.calcBMI()) {
+  console.log(
+    `${john.name}'s BMI (${john.calcBMI()}) is higher than ${
+      mark.name
+    }'s (${mark.calcBMI()})!`
+  );
+} else {
+  console.log(
+    `${mark.name}'s BMI (${mark.calcBMI()}) is higher than ${
+      john.name
+    }'s (${john.calcBMI()})!`
+  );
+}
