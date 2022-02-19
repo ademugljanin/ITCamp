@@ -811,48 +811,79 @@
 // }
 // console.log(without(data,'b'));
 
-var library = [ 
-    {
-        title: 'Bill Gates',
-        author: 'The Road Ahead',
-        readingStatus: true,
-        age: 29
-    },
-    {
-        title: 'Steve Jobs',
-        author: 'Walter Isaacson',
-        readingStatus: true,
-        age: 14
-    },
-    {
-        title: 'Mockingjay: The Final Book of The Hunger Games',
-        author: 'Suzanne Collins',
-        readingStatus: false,
-        age: 25
-    },
-    {
-        title: 'Bill Gates',
-        author: 'The Road Ahead',
-        readingStatus: true,
-        age: 19
-    },
-    {
-        title: 'Steve Jobs',
-        author: 'Walter Isaacson',
-        readingStatus: true,
-        age: 12
-    },];
+// var library = [ 
+//     {
+//         title: 'Bill Gates',
+//         author: 'The Road Ahead',
+//         readingStatus: true,
+//         age: 29
+//     },
+//     {
+//         title: 'Steve Jobs',
+//         author: 'Walter Isaacson',
+//         readingStatus: true,
+//         age: 14
+//     },
+//     {
+//         title: 'Mockingjay: The Final Book of The Hunger Games',
+//         author: 'Suzanne Collins',
+//         readingStatus: false,
+//         age: 25
+//     },
+//     {
+//         title: 'Bill Gates',
+//         author: 'The Road Ahead',
+//         readingStatus: true,
+//         age: 19
+//     },
+//     {
+//         title: 'Steve Jobs',
+//         author: 'Walter Isaacson',
+//         readingStatus: true,
+//         age: 12
+//     },];
 
-function without(niz){
-    let niz1 = [];
-    for (var i = 0; i < niz.length; i++) 
-       {
-           if(niz[i].age > 18){
-               niz1.push(niz[i]);
-           }
-        }
-    return niz1;
+// function without(niz){
+//     let niz1 = [];
+//     for (var i = 0; i < niz.length; i++) 
+//        {
+//            if(niz[i].age > 18){
+//                niz1.push(niz[i]);
+//            }
+//         }
+//     return niz1;
+// }
+
+// console.log(without(library));  
+
+// function wash(dry) {
+//     console.log("wash");
+//     setTimeout(dry, 3000);
+//   }
+//   function dry(fold) {
+//     console.log("dry");
+//     setTimeout(fold, 2000);
+//   }
+//   function fold(done) {
+//     console.log("fold");
+//     console.log("done");
+//   }
+  
+//   setTimeout(() => wash(() => dry(() => fold("done"))), 3000); 
+function wash(){
+    setTimeout(()=>{
+        console.log("Wash");
+    },1000)
 }
-
-console.log(without(library));  
-
+function dry(){
+    setTimeout(()=>{
+        console.log("Dry");
+    },2000)
+}
+function fold(){
+    setTimeout(()=>{
+        console.log("Fold");
+        console.log("Done");
+    },3000)
+}
+doLaundry([])
