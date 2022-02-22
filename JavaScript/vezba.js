@@ -870,20 +870,97 @@
 //   }
   
 //   setTimeout(() => wash(() => dry(() => fold("done"))), 3000); 
-function wash(){
-    setTimeout(()=>{
-        console.log("Wash");
-    },1000)
-}
-function dry(){
-    setTimeout(()=>{
-        console.log("Dry");
-    },2000)
-}
-function fold(){
-    setTimeout(()=>{
-        console.log("Fold");
-        console.log("Done");
-    },3000)
-}
-doLaundry([])
+// function wash(){
+//     setTimeout(()=>{
+//         console.log("Wash");
+//     },1000)
+// }
+// function dry(){
+//     setTimeout(()=>{
+//         console.log("Dry");
+//     },2000)
+// }
+// function fold(){
+//     setTimeout(()=>{
+//         console.log("Fold");
+//         console.log("Done");
+//     },3000)
+// }
+// doLaundry([])
+
+// function a (arg) {
+//     console.log("NEKI KOD");
+//     console.log("NESTO");
+//     arg();
+// }
+
+// function hello() {
+//   console.log("Hello world");
+// }
+// a = hello;
+// b = a;
+// c = b;
+// c();
+
+// var library = [
+//         {
+//             title: 'Bill Gates',
+//             author: 'The Road Ahead',
+//             readingStatus: true,
+//             age: 29
+//         },
+//         {
+//             title: 'Steve Jobs',
+//             author: 'Walter Isaacson',
+//             readingStatus: true,
+//             age: 14
+//         },
+//         {
+//             title: 'Mockingjay: The Final Book of The Hunger Games',
+//             author: 'Suzanne Collins',
+//             readingStatus: false,
+//             age: 25
+//         },
+//         {
+//             title: 'Bill Gates',
+//             author: 'The Road Ahead',
+//             readingStatus: true,
+//             age: 19
+//         },
+//         {
+//             title: 'Steve Jobs',
+//             author: 'Walter Isaacson',
+//             readingStatus: true,
+//             age: 12
+//         },];
+// var numbers = [45, 4, 9, 16, 25, 13, 38, 68, 61 ,52, 29];
+// var evenNumbers = [];
+// numbers.forEach((a) => {
+//     if(a%2===0){
+//         evenNumbers.push(a)
+//     }
+// });
+// console.log(evenNumbers);
+
+// let str = "the quick brown fox"
+// var a = str.split('');
+// var g = []
+// a.forEach((a,b) => {
+//     if(b%2==0){
+//         g.push(a.toLowerCase());
+//     }
+//     else {
+//         g.push(a.toUpperCase());
+//     }
+// });
+// let b = g.join('');
+// console.log(b);
+
+data = [123, NaN, false, 0, 15, -23, "", undefined, 47, null];
+br = 0;
+data.forEach((a) => {
+  if (!a) {
+    br++;
+  }
+});
+console.log(br);
