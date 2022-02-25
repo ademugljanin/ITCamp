@@ -942,19 +942,19 @@
 // });
 // console.log(evenNumbers);
 
-// let str = "the quick brown fox"
-// var a = str.split('');
-// var g = []
-// a.forEach((a,b) => {
-//     if(b%2==0){
-//         g.push(a.toLowerCase());
-//     }
-//     else {
-//         g.push(a.toUpperCase());
-//     }
-// });
-// let b = g.join('');
-// console.log(b);
+let str = "the quick brown fox"
+var a = str.split('');
+var g = []
+a.forEach((a,b) => {
+    if(b%2==0){
+        g.push(a.toLowerCase());
+    }
+    else {
+        g.push(a.toUpperCase());
+    }
+});
+let b = g.join('');
+console.log(b);
 
 // data = [123, NaN, false, 0, 15, -23, "", undefined, 47, null];
 // br = 0;
