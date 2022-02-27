@@ -956,11 +956,11 @@ a.forEach((a,b) => {
 let b = g.join('');
 console.log(b);
 
-// data = [123, NaN, false, 0, 15, -23, "", undefined, 47, null];
-// br = 0;
-// data.forEach((a) => {
-//   if (!a) {
-//     br++;
-//   }
-// });
-// console.log(br);
+data = [123, NaN, false, 0, 15, -23, "", undefined, 47, null];
+br = 0;
+data.forEach((a) => {
+  if (!a) {
+    br++;
+  }
+});
+console.log(br);
