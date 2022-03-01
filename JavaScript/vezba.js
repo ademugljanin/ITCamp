@@ -754,15 +754,12 @@
 // console.log(bl.nextBook);
 // console.log(bl.lastBook);
 
-
 // console.log(finishCurrentBook(bl));
 // console.log(finishCurrentBook(bl));
-
 
 // console.log(bl.currBook);
 // console.log(bl.nextBook);
 // console.log(bl.lastBook);
-
 
 // var cat = {
 //   tired : 0,
@@ -790,7 +787,7 @@
 //       console.log("TU ISPOD STOMAKA MAMI, TO ME RADI!");
 //     }
 //   }
-  
+
 // }
 // cat.tired = 30;
 // cat.sleep(3);
@@ -799,7 +796,6 @@
 // const {tired,hunger,lonely,happy} = cat;
 // console.log("Umor:",tired,"\nGlad",hunger,"\nUsamljenost",lonely,"\nSreca",happy);
 // cat.pat();
-
 
 // data = {
 //     a: 1,
@@ -811,7 +807,7 @@
 // }
 // console.log(without(data,'b'));
 
-// var library = [ 
+// var library = [
 //     {
 //         title: 'Bill Gates',
 //         author: 'The Road Ahead',
@@ -845,7 +841,7 @@
 
 // function without(niz){
 //     let niz1 = [];
-//     for (var i = 0; i < niz.length; i++) 
+//     for (var i = 0; i < niz.length; i++)
 //        {
 //            if(niz[i].age > 18){
 //                niz1.push(niz[i]);
@@ -854,7 +850,7 @@
 //     return niz1;
 // }
 
-// console.log(without(library));  
+// console.log(without(library));
 
 // function wash(dry) {
 //     console.log("wash");
@@ -868,8 +864,8 @@
 //     console.log("fold");
 //     console.log("done");
 //   }
-  
-//   setTimeout(() => wash(() => dry(() => fold("done"))), 3000); 
+
+//   setTimeout(() => wash(() => dry(() => fold("done"))), 3000);
 // function wash(){
 //     setTimeout(()=>{
 //         console.log("Wash");
@@ -942,25 +938,59 @@
 // });
 // console.log(evenNumbers);
 
-let str = "the quick brown fox"
-var a = str.split('');
-var g = []
-a.forEach((a,b) => {
-    if(b%2==0){
-        g.push(a.toLowerCase());
-    }
-    else {
-        g.push(a.toUpperCase());
-    }
-});
-let b = g.join('');
-console.log(b);
+// let str = "the quick brown fox"
+// var a = str.split('');
+// var g = []
+// a.forEach((a,b) => {
+//     if(b%2==0){
+//         g.push(a.toLowerCase());
+//     }
+//     else {
+//         g.push(a.toUpperCase());
+//     }
+// });
+// let b = g.join('');
+// console.log(b);
 
-data = [123, NaN, false, 0, 15, -23, "", undefined, 47, null];
-br = 0;
-data.forEach((a) => {
-  if (!a) {
-    br++;
-  }
+// data = [123, NaN, false, 0, 15, -23, "", undefined, 47, null];
+// br = 0;
+// data.forEach((a) => {
+//   if (!a) {
+//     br++;
+//   }
+// });
+// console.log(br);
+
+// let myPromise = new Promise(function (myResolve, myReject) {
+//   let x = 0;
+//   if (x === 0) {
+//     myResolve("OK!");
+//   } else {
+//     myReject("Error!");
+//   }
+// });
+// myPromise
+// .then((value) => {
+//     console.log(`Then : ${value}`);
+//     console.log(`PROGRAM`);
+//     console.log(`JE`);
+//     console.log(`DOBAR`);
+//   })
+//   .catch((value) => {
+//     console.log(`Catch : ${value}`);
+//   })
+//   .finally(() =>{
+//     console.log(`Uvek ce da se ovo izvrsi!`);
+//   })
+
+function job() {
+  return "Hello world";
+}
+let myPromise = new Promise((resolve, reject) => {
+    setTimeout(()=>{
+      resolve(job())
+    },2000);
 });
-console.log(br);
+myPromise.then((val) => {
+  console.log(val);
+});
