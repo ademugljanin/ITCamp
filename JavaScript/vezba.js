@@ -968,29 +968,30 @@
 //   } else {
 //     myReject("Error!");
 //   }
-// });
-myPromise
-.then((value) => {
-    console.log(`Then : ${value}`);
-    console.log(`PROGRAM`);
-    console.log(`JE`);
-    console.log(`DOBAR`);
-  })
-  .catch((value) => {
-    console.log(`Catch : ${value}`);
-  })
-  .finally(() =>{
-    console.log(`Uvek ce da se ovo izvrsi!`);
-  })
+// // });
+// myPromise
+// .then((value) => {
+//     console.log(`Then : ${value}`);
+//     console.log(`PROGRAM`);
+//     console.log(`JE`);
+//     console.log(`DOBAR`);
+//   })
+//   .catch((value) => {
+//     console.log(`Catch : ${value}`);
+//   })
+//   .finally(() =>{
+//     console.log(`Uvek ce da se ovo izvrsi!`);
+//   })
 
-function job() {
-  return "Hello world";
-}
-let myPromise = new Promise((resolve, reject) => {
-    setTimeout(()=>{
-      resolve(job())
-    },2000);
-});
-myPromise.then((val) => {
-  console.log(val);
-});
+// function job() {
+//   return "Hello world";
+// }
+// let myPromise = new Promise((resolve, reject) => {
+//     setTimeout(()=>{
+//       resolve(job())
+//     },2000);
+// });
+// myPromise.then((val) => {
+//   console.log(val);
+// });
+
