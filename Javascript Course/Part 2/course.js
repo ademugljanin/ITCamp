@@ -226,141 +226,211 @@
 /*******************CODING CHALLENGE*********************/
 
 // const john = {
-  //   name: "John",
-  //   surname: "Bauman",
-  //   weight: "78",
-  //   height: "1.69",
-  //   calcBMI: function () {
-  //     return this.weight / this.height ** 2;
-  //   },
-  // };
-  // const mark = {
-  //   name: "Mark",
-  //   surname: "Hauman",
-  //   weight: "92",
-  //   height: "1.95",
-  //   calcBMI: function () {
-  //     return this.weight / this.height ** 2;
-  //   },
-  // };
-  
-  // if (john.calcBMI() > mark.calcBMI()) {
-  //   console.log(
-  //     `${john.name}'s BMI (${john.calcBMI()}) is higher than ${
-  //       mark.name
-  //     }'s (${mark.calcBMI()})!`
-  //   );
-  // } else {
-  //   console.log(
-  //     `${mark.name}'s BMI (${mark.calcBMI()}) is higher than ${
-  //       john.name
-  //     }'s (${john.calcBMI()})!`
-  //   );
-  // }
-  
-  // console.log("Lifting weights repetiton 1");
-  // console.log("Lifting weights repetiton 2");
-  // console.log("Lifting weights repetiton 3");
-  // console.log("Lifting weights repetiton 4");
-  // console.log("Lifting weights repetiton 5");
-  // console.log("Lifting weights repetiton 6");
-  // console.log("Lifting weights repetiton 7");
-  // console.log("Lifting weights repetiton 8");
-  // console.log("Lifting weights repetiton 9");
-  // console.log("Lifting weights repetiton 10");
-  
-  // for (let i = 1; i <= 10; i++) {
-  //   console.log(`Lifting weights repetition ${i}`);
-  
-  // }
-  // const ademArray = [
-  //   'Adem',
-  //   'Ugljanin',
-  //   2037 - 1991,
-  //   'coder',
-  //   ['Tarik','Amir','Imran'],
-  //   true
-  // ]
-  // const types = [];
-  // for(let i=0;i<ademArray.length; i++){
-  //   types[i]= typeof ademArray[i];
-  //   console.log(ademArray[i]);
-  // }
-  // console.log(types);
-  
-  // const years = [1991,2007,1969,2020];
-  // const ages = [];
-  
-  // for (let i = 0; i < years.length; i++) {
-  //   ages.push(2037-years[i]);
-  // }
-  // console.log(ages);
-  
-  // for (let i = 0; i < years.length; i++) {
-  //   if(typeof years[i]==='number') break;
-  //   console.log(years[i], typeof years[i]);
-  
-  // }
-  
-  // const adem = [
-  //   "Adem",
-  //   "Ugljanin",
-  //   2037 - 1991,
-  //   "coder",
-  //   ["Tarik", "Amir", "Imran"],
-  //   true,
-  // ];
-  
-  // for (let i = adem.length - 1; i >= 0; i--) {
-  //   console.log(i,adem[i]);
-  // }
-  
-  // for (let i = 1; i < 6; i++) {
-  //   console.log(`---------------Starting excercise ${i}`);
-  //   for (let j = 1; j < 6; j++) {
-  //     console.log(`Excercise ${i}: Lifting weight repetition ${j}`);
-  
-  //   }
-  // }
-  
-  // for (let rep = 1; rep <= 10; rep++) {
-  //   console.log(`Lifting weights repetition ${rep}`);
-  // }
-  
-  // let rep = 1;
-  // while (rep<=10) {
-  //   console.log(`Lifting weights repetition ${rep}`);
-  //   rep++;
-  // }
-  
-  // let dice = Math.trunc(Math.random() * 6) + 1;
-  // while (dice !== 6){
-  //   console.log(`You rolled a ${dice}`);
-  //   dice = Math.trunc(Math.random() * 6) + 1;
-  //   if(dice === 6)
-  //   console.log(`Congrats you rolled ${dice}`);
-  // }
-  
-  /**********************CODING CHALLENGE**********************/
-  
-  // const bills = [22,295,176,440,37,105,10,1100,86,52];
-  // const tips = [];
-  // const totals = [];
-  
-  // const calcTip = (bill) => {
-  //     return bill >= 50 && bill <=300 ? bill *0.15 : bill*0.2;
-  //   };
-  // for (let i = 0; i < bills.length; i++) {
-  //     tips.push(calcTip(bills[i]));
-  //     totals.push(bills[i] + tips[i]);
-  //   }
-  //   console.log(tips, totals);
-    
-  //   const calcAvg = (arr) => {
-  //     let sum = 0;
-  //     for (let i = 0; i < arr.length; i++) {
-  //       sum += arr[i];
-  //     }
-  //     return sum/arr.length;
-  //   }
-  //   console.log(calcAvg(totals));
+//   name: "John",
+//   surname: "Bauman",
+//   weight: "78",
+//   height: "1.69",
+//   calcBMI: function () {
+//     return this.weight / this.height ** 2;
+//   },
+// };
+// const mark = {
+//   name: "Mark",
+//   surname: "Hauman",
+//   weight: "92",
+//   height: "1.95",
+//   calcBMI: function () {
+//     return this.weight / this.height ** 2;
+//   },
+// };
+
+// if (john.calcBMI() > mark.calcBMI()) {
+//   console.log(
+//     `${john.name}'s BMI (${john.calcBMI()}) is higher than ${
+//       mark.name
+//     }'s (${mark.calcBMI()})!`
+//   );
+// } else {
+//   console.log(
+//     `${mark.name}'s BMI (${mark.calcBMI()}) is higher than ${
+//       john.name
+//     }'s (${john.calcBMI()})!`
+//   );
+// }
+
+// console.log("Lifting weights repetiton 1");
+// console.log("Lifting weights repetiton 2");
+// console.log("Lifting weights repetiton 3");
+// console.log("Lifting weights repetiton 4");
+// console.log("Lifting weights repetiton 5");
+// console.log("Lifting weights repetiton 6");
+// console.log("Lifting weights repetiton 7");
+// console.log("Lifting weights repetiton 8");
+// console.log("Lifting weights repetiton 9");
+// console.log("Lifting weights repetiton 10");
+
+// for (let i = 1; i <= 10; i++) {
+//   console.log(`Lifting weights repetition ${i}`);
+
+// }
+// const ademArray = [
+//   'Adem',
+//   'Ugljanin',
+//   2037 - 1991,
+//   'coder',
+//   ['Tarik','Amir','Imran'],
+//   true
+// ]
+// const types = [];
+// for(let i=0;i<ademArray.length; i++){
+//   types[i]= typeof ademArray[i];
+//   console.log(ademArray[i]);
+// }
+// console.log(types);
+
+// const years = [1991,2007,1969,2020];
+// const ages = [];
+
+// for (let i = 0; i < years.length; i++) {
+//   ages.push(2037-years[i]);
+// }
+// console.log(ages);
+
+// for (let i = 0; i < years.length; i++) {
+//   if(typeof years[i]==='number') break;
+//   console.log(years[i], typeof years[i]);
+
+// }
+
+// const adem = [
+//   "Adem",
+//   "Ugljanin",
+//   2037 - 1991,
+//   "coder",
+//   ["Tarik", "Amir", "Imran"],
+//   true,
+// ];
+
+// for (let i = adem.length - 1; i >= 0; i--) {
+//   console.log(i,adem[i]);
+// }
+
+// for (let i = 1; i < 6; i++) {
+//   console.log(`---------------Starting excercise ${i}`);
+//   for (let j = 1; j < 6; j++) {
+//     console.log(`Excercise ${i}: Lifting weight repetition ${j}`);
+
+//   }
+// }
+
+// for (let rep = 1; rep <= 10; rep++) {
+//   console.log(`Lifting weights repetition ${rep}`);
+// }
+
+// let rep = 1;
+// while (rep<=10) {
+//   console.log(`Lifting weights repetition ${rep}`);
+//   rep++;
+// }
+
+// let dice = Math.trunc(Math.random() * 6) + 1;
+// while (dice !== 6){
+//   console.log(`You rolled a ${dice}`);
+//   dice = Math.trunc(Math.random() * 6) + 1;
+//   if(dice === 6)
+//   console.log(`Congrats you rolled ${dice}`);
+// }
+
+/**********************CODING CHALLENGE**********************/
+
+// const bills = [22,295,176,440,37,105,10,1100,86,52];
+// const tips = [];
+// const totals = [];
+
+// const calcTip = (bill) => {
+//     return bill >= 50 && bill <=300 ? bill *0.15 : bill*0.2;
+//   };
+// for (let i = 0; i < bills.length; i++) {
+//     tips.push(calcTip(bills[i]));
+//     totals.push(bills[i] + tips[i]);
+//   }
+//   console.log(tips, totals);
+
+//   const calcAvg = (arr) => {
+//     let sum = 0;
+//     for (let i = 0; i < arr.length; i++) {
+//       sum += arr[i];
+//     }
+//     return sum/arr.length;
+//   }
+//   console.log(calcAvg(totals));
+
+
+// const temperatures = [3, -2, -6, -1, "error", 9, 13, 17, 15, 14, 9, 5];
+
+// const calcTempAmplitude = function (temps) {
+//   let max = temps[0];
+//   let min = temps[0];
+//   for (let i = 0; i < temps.length; i++) {
+//     const curTemp = temps[i];
+//     if (typeof curTemp !== "number") continue;
+//     if (temps[i] > max) {
+//       max = temps[i];
+//     }
+//     if (temps[i] < min) {
+//       min = temps[i];
+//     }
+//   }
+//   console.log(min, max);
+//   return max - -min;
+// };
+
+// console.log(calcTempAmplitude(temperatures));
+
+// //Problem 2.
+
+// const temperatures2 = [2,7,5,1,-2,6,4,16,20,-10]
+// const calcTempAmplitudeNew = function (t1, t2) {
+//   const temps = t1.concat(t2);
+//   let max = temps[0];
+//   let min = temps[0];
+//   for (let i = 0; i < temps.length; i++) {
+//     const curTemp = temps[i];
+//     if (typeof curTemp !== "number") continue;
+//     if (temps[i] > max) {
+//       max = temps[i];
+//     }
+//     if (temps[i] < min) {
+//       min = temps[i];
+//     }
+//   }
+//   console.log(min, max);
+//   return max - -min;
+// };
+
+// console.log(calcTempAmplitudeNew(temperatures,temperatures2));
+
+// const measureKelvin = function() {
+//     const measurement = {
+//         type: 'temp',
+//         unit: 'celsius',
+//         value: Number(prompt('Degrees celsius:')),
+//     };
+
+//     const kelvin = measurement.value + 273;
+//     return kelvin;
+// }
+// console.log(measureKelvin());
+
+/***************************CODING CHALLENGE*******************************/
+
+// const test1 = [17, 21, 23];
+// const test2 = [12, 5, -5, 0, 4];
+// const printForecast = (arr) => {
+//   let str = "";
+//   for (let i = 0; i < arr.length; i++) {
+//     str += `${arr[i]}C in ${i + 1} days ... `;
+//   }
+//   console.log("... " + str);
+// };
+// console.log(printForecast(test1));
