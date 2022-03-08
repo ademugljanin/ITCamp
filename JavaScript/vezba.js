@@ -995,35 +995,57 @@
 //   console.log(val);
 // });
 
-function is_Palindrome(str1) {
-  var rev = str1.split("").reverse().join("");
-  return str1 == rev;
-}
+// function is_Palindrome(str1) {
+//   var rev = str1.split("").reverse().join("");
+//   return str1 == rev;
+// }
 
-function longest_palindrome(str1) {
-  var max_length = 0,
-    maxp = "";
+// function longest_palindrome(str1) {
+//   var max_length = 0,
+//     maxp = "";
 
-  for (var i = 0; i < str1.length; i++) {
-    var subs = str1.substr(i, str1.length);
+//   for (var i = 0; i < str1.length; i++) {
+//     var subs = str1.substr(i, str1.length);
 
-    for (var j = subs.length; j >= 0; j--) {
-      var sub_subs_str = subs.substr(0, j);
-      if (sub_subs_str.length <= 1) continue;
+//     for (var j = subs.length; j >= 0; j--) {
+//       var sub_subs_str = subs.substr(0, j);
+//       if (sub_subs_str.length <= 1) continue;
 
-      if (is_Palindrome(sub_subs_str)) {
-        if (sub_subs_str.length > max_length) {
-          max_length = sub_subs_str.length;
-          maxp = sub_subs_str;
-        }
+//       if (is_Palindrome(sub_subs_str)) {
+//         if (sub_subs_str.length > max_length) {
+//           max_length = sub_subs_str.length;
+//           maxp = sub_subs_str;
+//         }
+//       }
+//     }
+//   }
+
+//   return maxp;
+// }
+// console.log(longest_palindrome("abracadabra"));
+
+// console.log(
+//   longest_palindrome("HYTBCABADEFGHABCDEDCBAGHTFYW12345678987654321ZWETYGDE")
+// );
+
+// .then((response) => {
+  //   return response.json();
+  // })
+  // .then((response) => {
+    //   console.log(response);
+    // });
+    
+    async function funk() {
+      try {
+        const resJson = await (
+          await fetch("https://jsonplaceholder.typicode.com/users")
+        ).json();
+        const name = resJson.map((el) => {
+          return el.name;
+        });
+        console.log(name);
+      } catch (err) {
+        console.log("PROBLEM SA SERVEROM");
       }
     }
-  }
-
-  return maxp;
-}
-console.log(longest_palindrome("abracadabra"));
-
-console.log(
-  longest_palindrome("HYTBCABADEFGHABCDEDCBAGHTFYW12345678987654321ZWETYGDE")
-);
+    funk();
