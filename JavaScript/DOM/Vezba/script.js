@@ -16,18 +16,21 @@ document.getElementById("dugme").addEventListener("click", (e) => {
 fetch('https://serene-fortress-45917.herokuapp.com/v1/auth/signup' , 
 {
     method: 'POST',
+    body: JSON.stringify({
+        title: "foo",
+        body: "var",
+        userId: 1
+ }),
     headers: {
-      "Content-type": "application/x-www-form-urlencoded; charset=UTF-8"
+      "Content-type": "application/json; charset=UTF-8"
     },
-    credentials: 'include',
-    body: 'foo=bar&lorem=ipsum'
-  })
-  .then(res.json())
-  .then(res => {
+    body: JSON.stringify(user)
+}).then(response => response.json())
+  .then(response => {
     // Handle response 
-    console.log('Response: ', res);
+    console.log('Response: ', response);
   })
-  .catch(err => {
+  .catch((error) => {
     // Handle error 
     console.log('Error message: ', error);
 })
