@@ -1035,30 +1035,30 @@
 //   console.log(response);
 // });
 
-// async function funk() {
-//   try {
-//     const resJson = await (
-//       await fetch("https://jsonplaceholder.typicode.com/users")
-//     ).json();
-//     const name = resJson.map((el) => {
-//       return el.name;
-//     });
-//     console.log(name);
-//   } catch (err) {
-//     console.log("PROBLEM SA SERVEROM");
-//   }
-// }
-// funk();
+async function funk() {
+  try {
+    const resJson = await (
+      await fetch("https://jsonplaceholder.typicode.com/users")
+    ).json();
+    const name = resJson.map((el) => {
+      return el.name;
+    });
+    console.log(name);
+  } catch (err) {
+    console.log("PROBLEM SA SERVEROM");
+  }
+}
+funk();
 
-// var e = 10;
-// function sum(a) {
-//   return function (b) {
-//     return function (c) {
-//       return function (d) {
+var e = 10;
+function sum(a) {
+  return function (b) {
+    return function (c) {
+      return function (d) {
 
-//         return a + b + c + d + e;
-//       };
-//     };
-//   };
-// }
-// console.log(sum(1)(2)(3)(4));
+        return a + b + c + d + e;
+      };
+    };
+  };
+}
+console.log(sum(1)(2)(3)(4));
